@@ -6,6 +6,12 @@
 * ImageNet
 <!-- ___ -->
 
+## FL algorithm
+* FedAvg
+* FedNova
+* FedProx
+* SCAFFOLD
+
 ## Dependencies
 
 Language used: 
