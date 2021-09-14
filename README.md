@@ -1,9 +1,25 @@
-Dynamic Pruning in Federated Learning with non-IID data
+# Dynamic Pruning in Federated Learning with non-IID data
 
-How to run the experiments:
+## Dataset
+* FEMNIST
+* Cifar-10
+* ImageNet
+<!-- ___ -->
 
-nvidia-smi
+## Dependencies
+
+Language used: 
+* Python 3.7
+* PyTorch 1.8.0 (cuda 11.1)
+* Torchvision 0.9.0
+
+
+## Usage
+
+Here is one example to run this experiment:
+
 ```
+nvidia-smi
 python experiments.py \
 --model=vgg \
 --dataset=cifar10 \
@@ -29,4 +45,14 @@ python experiments.py \
 --log_file_name='vgg_fedavg_yes_test' \
 --checkpoint_name='vgg_fednova_yes.pth.tar' \
 --dynamic-pruning \
+```
+
+## Citation
+```
+@misc{yu2021dpfl,
+    title={Adaptive Dynamic Pruning for Non-IID Federated Learning}, 
+    author={Sixing Yu and Phuong Nguyen and Ali Anwar and Ali Jannesari},
+    journal={arXiv preprint arXiv:2106.06921}
+    year={2021}
+}
 ```
