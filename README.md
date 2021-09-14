@@ -6,6 +6,10 @@
 * ImageNet
 <!-- ___ -->
 
+## Model architectures
+* VGG-11
+* ResNet-32
+
 ## FL algorithm
 * FedAvg
 * FedNova

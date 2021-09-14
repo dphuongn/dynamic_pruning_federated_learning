@@ -7,7 +7,7 @@
 #SBATCH --mem=16G # Maximum amount of memory this job will be given, try to estimate this to the best of your ability. This asks for 128 GB of ram.
 
 #SBATCH --gres=gpu:1 #If you just need one gpu, you're done, if you need more you can change the number
-#SBATCH --nodelist gpu03
+#SBATCH --nodelist singularity
 #SBATCH --partition=gpu #specify the gpu partition
 #asdas SBATCH --nodelist frost-3 gpu01 gpu03 matrix singularity frost-1 frost-2 frost-4 frost-5 frost-6 frost-7
 
@@ -15,11 +15,11 @@
 
 # everything below this line is optional, but are nice to have quality of life things
 
-#SBATCH --output=resnet_fedprox_yes_1.%J.out # tell it to store the output console text to a file called job.<assigned job number>.out
+#SBATCH --output=vgg_fedprox_yes_new.%J.out # tell it to store the output console text to a file called job.<assigned job number>.out
 
-#SBATCH --error=resnet_fedprox_yes_1.%J.err # tell it to store the error messages from the program (if it doesn't write them to normal console output) to a file called job.<assigned job muber>.err
+#SBATCH --error=vgg_fedprox_yes_new.%J.err # tell it to store the error messages from the program (if it doesn't write them to normal console output) to a file called job.<assigned job muber>.err
 
-#SBATCH --job-name="resnet_fedprox_yes_1" # a nice readable name to give your job so you know what it is when you see it in the queue, instead of just numbers
+#SBATCH --job-name="vgg_fedprox_yes_new" # a nice readable name to give your job so you know what it is when you see it in the queue, instead of just numbers
 
 # under this we just do what we would normally do to run the program, everything above this line is used by slurm to tell it what your job needs for resources
 
@@ -36,7 +36,7 @@ source /work/LAS/jannesar-lab/dphuong/anaconda3/bin/activate /work/LAS/jannesar-
 nvidia-smi
 
 python experiments.py \
---model=resnet \
+--model=vgg \
 --dataset=cifar10 \
 --alg=fedprox \
 --lr=0.01 \
@@ -56,7 +56,7 @@ python experiments.py \
 --train-flag \
 --gate \
 --ratio 0.7 \
---log_file_name='resnet_fedprox_yes_1' \
+--log_file_name='vgg_fedprox_yes_new' \
 --mu=0.01 \
 --dynamic-pruning \
 
@@ -70,6 +70,4 @@ python experiments.py \
 #scontrol show job 308875
 #--gres=gpu:1
 #--gres=gpu:v100-pcie-16G:1
-#474313
-#474348
 #--dynamic-pruning \
