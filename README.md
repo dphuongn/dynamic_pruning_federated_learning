@@ -62,7 +62,7 @@ python experiments.py \
 @misc{yu2021dpfl,
     title={Adaptive Dynamic Pruning for Non-IID Federated Learning}, 
     author={Sixing Yu and Phuong Nguyen and Ali Anwar and Ali Jannesari},
-    journal={arXiv preprint arXiv:2106.06921}
+    journal={arXiv preprint arXiv:2106.06921},
     year={2021}
 }
 ```

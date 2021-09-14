@@ -22,6 +22,6 @@ python experiments.py \
 --train-flag \
 --gate \
 --ratio 0.7 \
---log_file_name='vgg_fedavg_yes_test' \
---checkpoint_name='vgg_fednova_yes.pth.tar' \
---dynamic-pruning \
+--checkpoint_dir='./checkpoints/' \
+--log_file_name='vgg_fedavg_no_test' \
+--checkpoint_name='vgg_fednova_no.pth.tar' \

@@ -108,8 +108,8 @@ def build_parser():
     parser.add_argument('--n_parties', type=int, default=2,  help='number of workers in a distributed cluster')
     parser.add_argument('--alg', type=str, default='fedavg',
                         help='communication strategy: fedavg/fedprox')
-    parser.add_argument('--checkpoint_dir', type=str, default='./checkpoints/',
-                        help='checkpoint directory')
+    parser.add_argument('--checkpoint_dir', type=str, default='.',
+                        help='Checkpoint directory')
     parser.add_argument('--checkpoint_name', type=str, default='ckpt.pth.tar',
                         help='checkpoint path')
     return parser

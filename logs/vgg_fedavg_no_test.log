@@ -1,0 +1,19 @@
+09-13 22:35 INFO     cuda
+09-13 22:35 INFO     ####################################################################################################
+09-13 22:35 INFO     Partitioning data
+09-13 22:35 INFO     Data statistics: {0: {0: 11, 1: 109, 2: 4997, 3: 4193, 4: 920, 5: 1904, 6: 662, 7: 372, 8: 5000, 9: 5000}, 1: {0: 4989, 1: 4891, 2: 3, 3: 807, 4: 4080, 5: 3096, 6: 4338, 7: 4628}}
+09-13 22:35 INFO     Initializing nets
+09-13 22:35 INFO     in comm round:0
+09-13 22:35 INFO     Training network 0. n_training: 23168
+09-13 22:35 INFO     Training network 0
+09-13 22:35 INFO     >> Pre-Training Training accuracy: 0.02857389502762431
+09-13 22:35 INFO     >> Pre-Training Test accuracy: 0.1
+09-13 22:36 INFO     Epoch: 0 Loss: 1.765577
+09-13 22:36 INFO     >> Training accuracy: 0.380223
+09-13 22:36 INFO     >> Test accuracy: 0.178800
+09-13 22:36 INFO      ** Training complete **
+09-13 22:36 INFO     net 0 final test acc 0.178800
+09-13 22:36 INFO     Training network 1. n_training: 26832
+09-13 22:36 INFO     Training network 1
+09-13 22:36 INFO     >> Pre-Training Training accuracy: 0.1616726296958855
+09-13 22:36 INFO     >> Pre-Training Test accuracy: 0.1

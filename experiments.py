@@ -147,7 +147,6 @@ def train_net(net_id, net, train_dataloader, test_dataloader, epochs, lr, args_o
     return train_acc, test_acc
 
 
-
 def local_train_net(nets, selected, args, net_dataidx_map, test_dl = None, device="cpu"):
     avg_acc = 0.0
 
@@ -301,7 +300,6 @@ def local_train_net_fednova(nets, selected, global_model, args, net_dataidx_map,
     return nets_list, a_list, d_list, n_list
 
 
-
 def train_net_fedprox(net_id, net, global_net, train_dataloader, test_dataloader, epochs, lr, args_optimizer, mu, device="cpu"):
     logger.info('Training network %s' % str(net_id))
     logger.info('n_training: %d' % len(train_dataloader))
@@ -373,6 +371,7 @@ def train_net_fedprox(net_id, net, global_net, train_dataloader, test_dataloader
 
     logger.info(' ** Training complete **')
     return train_acc, test_acc
+
 
 def local_train_net_fedprox(nets, selected, global_model, args, net_dataidx_map, test_dl = None, device="cpu"):
     avg_acc = 0.0
@@ -550,7 +549,6 @@ def local_train_net_scaffold(nets, selected, global_model, c_nets, c_global, arg
     return nets_list
 
 
-
 def get_partition_dict(dataset, partition, n_parties, init_seed=0, datadir='./data', logdir='./logs', beta=0.5):
     seed = init_seed
     np.random.seed(seed)
@@ -560,14 +558,15 @@ def get_partition_dict(dataset, partition, n_parties, init_seed=0, datadir='./da
 
     return net_dataidx_map
 
+
 if __name__ == '__main__':
 
     args = get_parameter()
 
-
     ###################################################################################################
 
     mkdirs(args.logdir)
+    mkdirs(args.checkpoint_dir)
     # mkdirs(args.modeldir)
     if args.log_file_name is None:
         argument_path='experiment_arguments-%s.json' % datetime.datetime.now().strftime("%Y-%m-%d-%H:%M-%S")
