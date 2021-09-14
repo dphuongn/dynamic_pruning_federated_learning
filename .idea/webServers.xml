@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="cd0533b0-fa6b-40a1-aa83-a947b7242d44" name="prontodtn">
+        <fileTransfer rootFolder="/work/LAS/jannesar-lab/dphuong" accessType="SFTP" host="prontodtn.las.iastate.edu" port="22" sshConfigId="16cd550c-b48a-465c-b375-4c075a77d581" sshConfig="dphuong@prontodtn.las.iastate.edu:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

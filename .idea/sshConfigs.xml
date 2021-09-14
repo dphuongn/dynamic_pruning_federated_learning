@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="prontodtn.las.iastate.edu" id="16cd550c-b48a-465c-b375-4c075a77d581" port="22" nameFormat="DESCRIPTIVE" username="dphuong" />
+    </configs>
+  </component>
+</project>

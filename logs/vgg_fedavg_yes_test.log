@@ -1,0 +1,30 @@
+09-13 13:03 INFO     cuda
+09-13 13:03 INFO     ####################################################################################################
+09-13 13:03 INFO     Partitioning data
+09-13 13:03 INFO     Data statistics: {0: {0: 11, 1: 109, 2: 4997, 3: 4193, 4: 920, 5: 1904, 6: 662, 7: 372, 8: 5000, 9: 5000}, 1: {0: 4989, 1: 4891, 2: 3, 3: 807, 4: 4080, 5: 3096, 6: 4338, 7: 4628}}
+09-13 13:03 INFO     Initializing nets
+09-13 13:03 INFO     in comm round:0
+09-13 13:03 INFO     Training network 0. n_training: 23168
+09-13 13:03 INFO     Training network 0
+09-13 13:03 INFO     >> Pre-Training Training accuracy: 0.004704765193370166
+09-13 13:03 INFO     >> Pre-Training Test accuracy: 0.1
+09-13 13:04 INFO     Epoch: 0 Loss: 1.314760
+09-13 13:05 INFO     >> Training accuracy: 0.605922
+09-13 13:05 INFO     >> Test accuracy: 0.309600
+09-13 13:05 INFO      ** Training complete **
+09-13 13:05 INFO     net 0 final test acc 0.309600
+09-13 13:05 INFO     Training network 1. n_training: 26832
+09-13 13:05 INFO     Training network 1
+09-13 13:05 INFO     >> Pre-Training Training accuracy: 0.18228234943351224
+09-13 13:05 INFO     >> Pre-Training Test accuracy: 0.1
+09-13 13:06 INFO     Epoch: 0 Loss: 1.435259
+09-13 13:07 INFO     >> Training accuracy: 0.534138
+09-13 13:07 INFO     >> Test accuracy: 0.342400
+09-13 13:07 INFO      ** Training complete **
+09-13 13:07 INFO     net 1 final test acc 0.342400
+09-13 13:07 INFO     global n_training: 782
+09-13 13:07 INFO     global n_test: 313
+09-13 13:11 INFO     >> Global Model Train accuracy: 0.100000
+09-13 13:11 INFO     >> Global Model Test accuracy: 0.100000
+09-13 13:11 INFO     total communication time: 476.926763
+09-13 13:11 INFO     avg time per round: 476.926763
