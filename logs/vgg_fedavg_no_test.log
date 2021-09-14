@@ -17,3 +17,14 @@
 09-13 22:36 INFO     Training network 1
 09-13 22:36 INFO     >> Pre-Training Training accuracy: 0.1616726296958855
 09-13 22:36 INFO     >> Pre-Training Test accuracy: 0.1
+09-13 22:37 INFO     Epoch: 0 Loss: 1.815681
+09-13 22:37 INFO     >> Training accuracy: 0.348837
+09-13 22:37 INFO     >> Test accuracy: 0.215200
+09-13 22:37 INFO      ** Training complete **
+09-13 22:37 INFO     net 1 final test acc 0.215200
+09-13 22:37 INFO     global n_training: 782
+09-13 22:37 INFO     global n_test: 313
+09-13 22:39 INFO     >> Global Model Train accuracy: 0.123880
+09-13 22:39 INFO     >> Global Model Test accuracy: 0.128500
+09-13 22:39 INFO     total communication time: 226.441426
+09-13 22:39 INFO     avg time per round: 226.441426
