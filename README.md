@@ -1,5 +1,7 @@
 # Dynamic Pruning in Federated Learning with non-IID data
 
+[![DOI](https://zenodo.org/badge/406184844.svg)](https://zenodo.org/badge/latestdoi/406184844)
+
 ## Dataset
 * FEMNIST
 * Cifar-10
